@@ -1,5 +1,5 @@
 {
-  "name": "caller-id",
+  "name": "cordova-plugin-callerid",
   "description": "Cordova Caller ID Plugin",
   "version": "1.0.0",
   "homepage": "https://github.com/shastox/cordova-plugin-callerid",
@@ -18,8 +18,7 @@
   },
   "keywords": [
     "phonegap",
-    "caller",
-    "cordova-android",
+    "caller"
   ],
   "engines": [
     {
