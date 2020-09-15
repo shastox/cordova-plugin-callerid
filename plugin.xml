@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-callerid"
+        version="1.0.0-dev">
+    <name>Caller ID</name>
+    <description>Cordova Caller ID Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,caller,id</keywords>
+    <repo>https://github.com/cordova-plugin-device.git</repo>
+    <issue>https://github.com/shastox/cordova-plugin-callerid/issues</issue>
+
+    <js-module src="www/caller-id.js" name="caller-id">
+        <clobbers target="callerid" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CallerID" >
+                <param name="android-package" value="com.selabor.callerid"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/CallerID.java" target-dir="src/org/apache/cordova/callerid" />
+    </platform>
+    
+</plugin>
