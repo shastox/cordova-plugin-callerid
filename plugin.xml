@@ -21,7 +21,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/CallerID.java" target-dir="src/com/selabor/callerid" />
+        <source-file src="src/android/CallerID.java" target-dir="src/com/selabor/plugin" />
     </platform>
 
 </plugin>
